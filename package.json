@@ -1,0 +1,32 @@
+{
+  "name": "Boilerplate",
+  "version": "1.0.0",
+  "description": "HTML&CSS Boilerplate",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Browne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesAnthonyBrowne/boilerplate"
+  },
+  "homepage": "https://github.com/CharlesAnthonyBrowne/boilerplate#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "autoprefixer-core": "^6.0.1",
+    "gulp-babel": "^5.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-import": "^7.0.0",
+    "postcss-mixins": "^1.0.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^1.0.1",
+    "postcss-url": "^5.0.2"
+  },
+  "dependencies": {
+    "gulp-uglify": "^1.4.2",
+    "rsvp": "^3.1.0"
+  }
+}

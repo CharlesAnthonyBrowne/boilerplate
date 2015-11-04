@@ -16,7 +16,7 @@ var
 										 require('postcss-nested'),
 										 require('autoprefixer')({ browsers: ['last 2 versions', '> 2%'] })
 		];
-
+// Compile tasks
 gulp.task("babel", function () {
   return gulp.src("./javascripts/*.js")
     .pipe(sourcemaps.init())
@@ -25,20 +25,18 @@ gulp.task("babel", function () {
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("./bundle/"));
 });
-
-// Watch task
-gulp.task('watch', function(){
-  gulp.watch('./stylesheets/*.css', ['css']);
-	gulp.watch('./javascripts/*.js', ['babel']);
-});
-
-// Compile task
 gulp.task('css', function () {
     return gulp.src('./stylesheets/*.css')
         .pipe(sourcemaps.init())
 	      .pipe(postcss(processors))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./bundle/'));
+});
+
+// Watch task
+gulp.task('watch', function(){
+  gulp.watch('./stylesheets/*.css', ['css']);
+	gulp.watch('./javascripts/*.js', ['babel']);
 });
 
 
